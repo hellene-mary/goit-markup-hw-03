@@ -14,6 +14,23 @@ body {
     background-color: var(--basic-bgc);
 }
 
+p, h1, h2, h3, h4, h5,h6 {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -27,7 +44,20 @@ body {
     margin: -1px;
 }
 
-/* ------------------------HEDER--------------------------------- */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+/* ------------------------HEADER--------------------------------- */
+
+/* .header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+} */
 
 .logo {
     text-decoration: none;
@@ -77,6 +107,8 @@ body {
 
 .hero {
     background-color: var(--dark-bgc);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -87,6 +119,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-button { 
@@ -106,12 +139,17 @@ body {
 
 /* ------------------------ADVANTAGE------------------------------- */
 
+.advantage {
+    margin-top: 94px;
+}
+
 .advantage-heading {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .advantage-text {
@@ -123,21 +161,38 @@ body {
 
 /* ------------------------FOTO------------------------------- */
 
-.foto-title, .team-title {
+.foto {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.foto-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
+
 
 /* ------------------------TEAM------------------------------- */
 
 .team {
     background-color: var(--second-bgc);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-member {
     background-color: var(--basic-bgc);
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .team-name {
@@ -146,6 +201,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -170,6 +226,8 @@ body {
 
 .footer {
     background-color: var(--dark-bgc);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .address {
