@@ -25,6 +25,8 @@ ul, ol {
 
 button {
     cursor: pointer;
+    border: none; 
+    outline: none;
 }
 
 img {
@@ -49,15 +51,19 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 /* ------------------------HEADER--------------------------------- */
 
-/* .header{
+.header {
     padding-top: 24px;
     padding-bottom: 25px;
-} */
+    border-bottom: solid 1px #ECECEC ;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
     text-decoration: none;
@@ -67,6 +73,7 @@ img {
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.03em;
+    margin-right: 94px;
 }
 
 .accent {
@@ -95,12 +102,30 @@ img {
     letter-spacing: 0.02em;
 }
 
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+}
+
 .contacts-link {
     color: var(--second-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.contacts-item:first-child {
+    margin-right: 50px;
 }
 
 /* ------------------------HERO------------------------------- */
@@ -133,14 +158,26 @@ img {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
 } 
 
 /* ------------------------ADVANTAGE------------------------------- */
 
 .advantage {
-    margin-top: 94px;
+    padding-top: 94px;
+}
+
+.advantage-list {display: flex;}
+
+.advantage-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .advantage-heading {
@@ -162,8 +199,8 @@ img {
 /* ------------------------FOTO------------------------------- */
 
 .foto {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .foto-title {
@@ -172,6 +209,11 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+}
+
+.foto-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -183,8 +225,16 @@ img {
     padding-bottom: 94px;
 }
 
+.team-list {
+    display: flex;
+    margin-left: -30px;
+    /* justify-content: space-between; */
+}
+
 .team-member {
     background-color: var(--basic-bgc);
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
 }
 
 .team-title {
@@ -201,6 +251,7 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -210,6 +261,7 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 /* ------------------------FOOTER------------------------------- */
@@ -237,6 +289,7 @@ img {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-top: 20px;
 }
     
 .footer-contacts-link {
@@ -248,8 +301,28 @@ img {
     letter-spacing: 0.03em;
 }
 
+.footer-contacts-item {
+    margin-top: 9px;
+}
+
 
 /* ------------------------PORTFOLIO------------------------------- */
+
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
 
 .btn {
     color: var(--text-color);
@@ -262,6 +335,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .btn:hover, .btn:focus {
@@ -269,11 +344,30 @@ img {
     background-color: var(--color-button);
 }
 
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.portfolio-item {
+    flex-basis: calc(100% / n -30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-text{
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
 .portfolio-top-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .portfolio-bottom-text {
