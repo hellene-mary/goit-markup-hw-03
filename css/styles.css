@@ -142,9 +142,12 @@ img {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    width: 696px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button { 
@@ -178,6 +181,10 @@ img {
 
 .advantage-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.advantage-item{
+    width: 270px;
 }
 
 .advantage-heading {
@@ -245,13 +252,17 @@ img {
     margin-bottom: 50px;
 }
 
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -261,7 +272,6 @@ img {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
 }
 
 /* ------------------------FOOTER------------------------------- */
@@ -278,8 +288,8 @@ img {
 
 .footer {
     background-color: var(--dark-bgc);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .address {
@@ -321,7 +331,7 @@ img {
 .button {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .btn {
